@@ -8,7 +8,7 @@ curs = conn.cursor()
 
 
 # Print out data from table BME_DATA
-for row in curs.execute("SELECT * FROM BME_DATA ORDER BY TIME_STAMP DESC LIMIT 200"):
+for row in curs.execute("SELECT * FROM BME_DATA ORDER BY TIME_STAMP DESC LIMIT 2000"):
     print (row)
 
 conn.close()
